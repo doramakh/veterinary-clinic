@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
+      url("../fonts/FuturaPT-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT Book";
+  src: url("../fonts/") format("woff2"),
+      url("../fonts/FuturaPT-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
+      url("../fonts/FuturaPT-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT Demi";
+  src: url("../fonts/FuturaPT-Demi.woff2") format("woff2"),
+      url("../fonts/FuturaPT-Demi.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
+      url("../fonts/FuturaPT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT Extra";
+  src: url("../fonts/FuturaPT-ExtraBold.woff2") format("woff2"),
+      url("../fonts/FuturaPT-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Heavy.woff2") format("woff2"),
+      url("../fonts/FuturaPT-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  font-family: "Futura PT", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1148px;
+  padding: 0 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
