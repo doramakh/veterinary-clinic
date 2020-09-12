@@ -122,6 +122,7 @@ img{
   vertical-align: baseline;
   text-decoration: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 /* Site Header */
@@ -255,6 +256,15 @@ img{
   top: 50%;
   left: 65px;
   transform: translateY(-50%);
+  transition: opacity 0.3s ease;
+}
+
+.logo-link:hover{
+  opacity: 0.8;
+}
+
+.logo-link:active{
+  opacity: 0.5;
 }
 
 .logo{
@@ -339,5 +349,59 @@ img{
 }
 
 .btn-ask-question:active{
+  opacity: 0.5;
+}
+
+/* Promo Section */
+
+.promo-section{
+  padding: 153px 321px;
+  background-color: #F9F8F8;
+  background-image: url(../img/promo-bg-left.png), 
+    url(../img/promo-bg-right.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: contain, auto;
+}
+
+.promo-section-content{
+  max-width: 608px;
+  margin-left: auto;
+}
+
+.page-heading{
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.page-heading span{
+  color: #1c97b6;
+}
+
+.page-info{
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+}
+
+.btn-our-services{
+  padding: 15px 48px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease,
+  opacity 0.3s ease,
+  color 0.3s ease;
+}
+
+.btn-our-services:hover{
+  color: #333333;
+  background-color: #FFBD54;
+}
+
+.btn-our-services:active{
   opacity: 0.5;
 }
