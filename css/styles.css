@@ -106,10 +106,27 @@ img{
   overflow: hidden;
 }
 
+/* Button */
+
+.btn{
+  display: inline-block;
+  padding: 22px 27px;
+  border: none;
+  background: none;
+  background-color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  text-align: center;
+  vertical-align: baseline;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Site Header */
 
 .site-header{
-  padding: 11px 65px 9px 258px;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -121,9 +138,13 @@ img{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 .clinic-address{
+  display: flex;
+  align-items: center;
   font-style: normal;
   margin-right: 8px;
 }
@@ -136,7 +157,7 @@ img{
   background-image: url(../img/home.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   content: "";
 }
 
@@ -186,6 +207,11 @@ img{
   background-color: #FFBD54;
 }
 
+.working-hours{
+  display: flex;
+  align-items: center;
+}
+
 .working-hours::before{
   display: inline-block;
   width: 14px;
@@ -196,4 +222,122 @@ img{
   background-position: center center;
   background-size: contain;
   content: "";
+}
+
+.working-hours span{
+  display: inline-block;
+}
+
+.working-hours span:not(:last-child){
+  margin-right: 17px;
+}
+
+/* Site Navigation */
+
+.site-nav{
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid #F3F3F3;
+}
+
+.site-nav-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link-wrapper{
+  width: 150px;
+}
+
+.logo-link{
+  position: absolute;
+  top: 50%;
+  left: 65px;
+  transform: translateY(-50%);
+}
+
+.logo{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* nav menu */
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 15px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.nav-link{
+  display: flex;
+  align-items: center;
+  padding: 19px 27px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  text-decoration: none;
+  transition: background-color 0.3s ease,
+  opacity 0.3s ease;
+}
+
+.nav-link:hover{
+  background-color: #FFBD54;
+}
+
+.nav-link:active{
+  opacity: 0.5;
+}
+
+.nav-link-active::before{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+  background-image: url(../img/active.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.nav-link-active:hover,
+.nav-link-active:active{
+  background-color: transparent;
+  opacity: 1;
+}
+
+.btn-ask-question{
+  display: flex;
+  align-items: center;
+  color: #333333;
+  background-color: transparent;
+  transition: background-color 0.3s ease,
+  opacity 0.3s ease;
+}
+
+.btn-ask-question::before{
+  display: inline-block;
+  width: 23px;
+  height: 21px;
+  margin-right: 5px;
+  background-image: url(../img/pet.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.btn-ask-question:hover{
+  color: #fff;
+  background-color: #333333;
+}
+
+.btn-ask-question:active{
+  opacity: 0.5;
 }
