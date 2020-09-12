@@ -744,3 +744,21 @@ img{
   opacity: 0.5;
 }
 
+/* Site Footer */
+
+.site-footer{
+  padding-top: 54px;
+  padding-bottom: 23px;
+  background-color: #F3F3F3;
+}
+
+.site-footer-content{
+  display: flex;
+}
+
+.footer-nav-menu{
+  display: flex;
+  flex-direction: column;
+}
+
+
