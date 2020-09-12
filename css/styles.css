@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
-      url("../fonts/FuturaPT-Light.woff") format("woff");
+  url("../fonts/FuturaPT-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
   font-family: "Futura PT Book";
   src: url("../fonts/") format("woff2"),
-      url("../fonts/FuturaPT-Book.woff") format("woff");
+  url("../fonts/FuturaPT-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
-      url("../fonts/FuturaPT-Medium.woff") format("woff");
+  url("../fonts/FuturaPT-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -28,7 +28,7 @@
 @font-face {
   font-family: "Futura PT Demi";
   src: url("../fonts/FuturaPT-Demi.woff2") format("woff2"),
-      url("../fonts/FuturaPT-Demi.woff") format("woff");
+  url("../fonts/FuturaPT-Demi.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -37,7 +37,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
-      url("../fonts/FuturaPT-Bold.woff") format("woff");
+  url("../fonts/FuturaPT-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -46,7 +46,7 @@
 @font-face {
   font-family: "Futura PT Extra";
   src: url("../fonts/FuturaPT-ExtraBold.woff2") format("woff2"),
-      url("../fonts/FuturaPT-ExtraBold.woff") format("woff");
+  url("../fonts/FuturaPT-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -55,7 +55,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Heavy.woff2") format("woff2"),
-      url("../fonts/FuturaPT-Heavy.woff") format("woff");
+  url("../fonts/FuturaPT-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -75,17 +75,22 @@ html {
 body {
   height: 100%;
   font-family: "Futura PT", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: #000000;
-  background-color: #FFFFFF;
+  font-size: 20px;
+  line-height: 26px;
+  color: #949494;
+  background-color:#F9F8F8;
   margin: 0;
   padding: 0;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  max-width: 1148px;
-  padding: 0 24px;
+  max-width: 1390px;
+  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -101,7 +106,94 @@ body {
   overflow: hidden;
 }
 
-img{
-  max-width: 100%;
-  height: auto;
+/* Site Header */
+
+.site-header{
+  padding: 11px 65px 9px 258px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #F9F8F8;
+}
+
+.site-header-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clinic-address{
+  font-style: normal;
+  margin-right: 8px;
+}
+
+.clinic-address::before{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+  background-image: url(../img/home.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.phone-numbers{
+  display: flex;
+  align-items: center;
+}
+
+.phone-numbers::before{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+  background-image: url(../img/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.phone-link{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease,
+  opacity 0.3s ease;
+}
+
+.phone-link:hover{
+  color: #FFBD54;
+}
+
+.phone-link:active{
+  color: #333333;
+  opacity: 0.5;
+}
+
+.dot{
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 0 9px;
+  background-color: #FFBD54;
+}
+
+.working-hours::before{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+  background-image: url(../img/schedule.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
 }
