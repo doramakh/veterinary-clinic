@@ -827,6 +827,7 @@ img{
 .article-even {
   display: flex;
   width: 640px;
+  margin: 0 24px;
 }
 
 .article-even-img-wrapper{
