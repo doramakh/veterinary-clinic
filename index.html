@@ -258,7 +258,7 @@
       <div class="container">
         <div class="events-form-section-content">
           <h2 class="section-heading">Будь в курсе событий</h2>
-          <form class="events-form" action="#">
+          <form class="events-form" action="#" method="GET">
             <label class="visually-hidden" for="email_input">Укажите Ваш email адрес</label>
             <input pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" type="email" name="email" id="email_input" placeholder="Укажите Ваш email адрес" required>
             
@@ -335,6 +335,26 @@
   </article>
   
   
+  <!-- Feedback Section -->
+  
+  <section class="feedback-section">
+    <a class="feedback-map-link" href="https://goo.gl/maps/Li6QioLF6r5FvDAi7">
+      <img class="feedback-map" src="img/map-yandex.jpg" alt="Map" srcset="img/map-yandex.jpg 1x, img/map-yandex@2x.jpg 2x" width="462" height="652">
+    </a>
+    
+    <div class="feedback-section-content">
+      <h2 class="section-heading">Обратная связь</h2>
+    
+    <p class="feedback-subtitle">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+    
+    <form action="#" method="GET">
+      <label for="name_input">Ваше имя</label>
+      <input type="text" id="name_input" name="username" placeholder="Ваше имя" required>
+    </form>
+    </div>
+  </section>
+  
+  
   <!-- Site Footer -->
   
   
@@ -370,11 +390,11 @@
           <span><b>Пн - Пт</b> 8:00 - 18:00</span>
           <span><b>Сб - Вс</b> 8:00 - 14:00</span>
         </div>
-
+        
         <address class="footer-clinic-address">
           г. Мариуполь, <br> проспект Победы, 48а
         </address>
-
+        
         <div class="phone-numbers-footer">
           <a class="phone-link" href="tel:+0676347574">(067) 634 -75 - 74</a>
           <a class="phone-link" href="tel:+0637570131">(0637) 57 - 01 - 31</a>

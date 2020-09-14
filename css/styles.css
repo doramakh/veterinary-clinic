@@ -918,6 +918,10 @@ img{
   opacity: 0.5;
 }
 
+.feedback-section{
+  display: flex;
+}
+
 /* Site Footer */
 
 .site-footer-content{
