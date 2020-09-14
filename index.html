@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veterinary Clinic</title>
-  <!-- <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css"> -->
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
 </head>
 <body>
   
@@ -253,7 +253,7 @@
     
     
     <!-- Event Form Section -->
-
+    
     <section class="events-form-section">
       <div class="container">
         <div class="events-form-section-content">
@@ -261,7 +261,7 @@
           <form class="events-form" action="#">
             <label class="visually-hidden" for="email_input">Укажите Ваш email адрес</label>
             <input pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" type="email" name="email" id="email_input" placeholder="Укажите Ваш email адрес" required>
-
+            
             <button class="btn event-form-btn" type="submit">Подписаться</button>
           </form>
         </div>
@@ -270,39 +270,116 @@
   </main>
   
   
+  <!-- Article Section -->
+  
+  
+  <article class="articles-section">
+    <div class="container">
+      <div class="articles-section-content">
+        <h2 class="section-heading">Полезные статьи</h2>
+        
+        <div class="article">
+          <article class="inner-article article-odd">
+            <div class="article-odd-img-wrapper">
+              <img src="img/article-cat.jpg" alt="Article img" srcset="img/article-cat.jpg 1x, img/article-cat@2x.jpg 2x" width="305" height="180">
+            </div>
+            
+            <time>28.08.2020</time>
+            
+            <h3 class="inner-heading">Ультразвуковая чистка зубов</h3>
+            
+            <p>Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+            
+            <a class="btn btn-read-more" href="#">Читать больше</a>
+          </article>
+          
+          <article class="inner-article article-even">
+            <div class="article-even-img-wrapper">
+              <img src="img/article-two-dogs.jpg" alt="Article img" srcset="img/article-two-dogs.jpg 1x, img/article-two-dogs@2x.jpg 2x" width="305" height="435">
+            </div>
+            
+            <div class="article-even-text">
+              <div class="article-even-info">
+                <div class="article-hashtag">
+                  <span>#собака</span>
+                  <span>#дом</span>
+                  <span>#уход</span>
+                </div>
+                <time>28.08.2020</time>
+              </div>
+              
+              <h3 class="inner-heading">Перед тем как завести собаку</h3>
+              
+              <p>Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие.</p>
+              
+              <a class="btn btn-read-more" href="#">Читать больше</a>
+            </div>
+          </article>
+          
+          <article class="inner-article article-odd">
+            <div class="article-odd-img-wrapper">
+              <img src="img/article-dog.jpg" alt="Article img" srcset="img/article-dog.jpg 1x, img/article-dog@2x.jpg 2x" width="305" height="180">
+            </div>
+            
+            <time>28.08.2020</time>
+            
+            <h3 class="inner-heading">Когда привавать питомца?</h3>
+            
+            <p>Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+            
+            <a class="btn btn-read-more" href="#">Читать больше</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  
   <!-- Site Footer -->
-
-
+  
+  
   <footer class="site-footer">
     <div class="container">
       <div class="site-footer-content">
         <a class="footer-logo-link" href="index.html">
           <img class="logo" src="img/logo.svg" alt="Vet Logo" width="178" height="87">
         </a>
-    
+        
         <ul class="nav-menu footer-nav-menu">
           <li class="nav-item">
             <a class="nav-link footer-nav-link" href="#">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link footer-nav-link" href="#">О клинике</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link footer-nav-link" href="#">Наши услуги</a>
-          </li>
-        </ul>
-    
-        <ul class="nav-menu footer-nav-menu">
-          <li class="nav-item">
             <a class="nav-link footer-nav-link" href="#">Полезные статьи</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link footer-nav-link" href="#">О клинике</a>
           </li>
           <li class="nav-item">
             <a class="nav-link footer-nav-link" href="#">FAQ</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link footer-nav-link" href="#">Наши услуги</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link footer-nav-link" href="#">Контакты</a>
           </li>
         </ul>
+        
+        <div class="working-hours footer-working-hours">
+          <span><b>Пн - Пт</b> 8:00 - 18:00</span>
+          <span><b>Сб - Вс</b> 8:00 - 14:00</span>
+        </div>
+
+        <address class="footer-clinic-address">
+          г. Мариуполь, <br> проспект Победы, 48а
+        </address>
+
+        <div class="phone-numbers-footer">
+          <a class="phone-link" href="tel:+0676347574">(067) 634 -75 - 74</a>
+          <a class="phone-link" href="tel:+0637570131">(0637) 57 - 01 - 31</a>
+          <a class="phone-link" href="tel:+0676347574">(098) 266 - 43 - 89</a>
+        </div>       
       </div>
     </div>
   </footer>
