@@ -139,6 +139,7 @@ img{
   justify-content: space-between;
   padding-top: 11px;
   padding-bottom: 9px;
+  padding-left: 178px;
 }
 
 .clinic-address{
@@ -234,12 +235,12 @@ img{
 /* Site Navigation */
 
 .site-nav{
-  position: relative;
   background-color: #FFFFFF;
   border: 1px solid #F3F3F3;
 }
 
 .site-nav-content{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -252,7 +253,7 @@ img{
 .logo-link{
   position: absolute;
   top: 50%;
-  left: 65px;
+  left: 0;
   transform: translateY(-50%);
   transition: opacity 0.3s ease;
 }
