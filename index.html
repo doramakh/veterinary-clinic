@@ -11,68 +11,70 @@
 <body>
   
   
-  <!-- Site Header -->
-  
   <header class="site-header">
-    <div class="container">
-      <div class="site-header-content">
-        <address class="clinic-address">
-          г. Мариуполь, проспект Победы, 48а
-        </address>
-        
-        <div class="phone-numbers">
-          <a class="phone-link" href="tel:+0676347574">(067) 634 -75 - 74</a>
-          <span class="dot"></span>
-          <a class="phone-link" href="tel:+0637570131">(0637) 57 - 01 - 31</a>
-          <span class="dot"></span>
-          <a class="phone-link" href="tel:+0676347574">(098) 266 - 43 - 89</a>
-        </div>
-        
-        <div class="working-hours">
-          <span><b>Пн - Пт</b> 8:00 - 18:00</span>
-          <span><b>Сб - Вс</b> 8:00 - 14:00</span>
-        </div>
-      </div>
-    </div>
-  </header>
-  
-  <!-- Site Navigation -->
-  
-  <nav class="site-nav">
-    <div class="container">
-      <div class="site-nav-content">
-        <div class="logo-link-wrapper">
-          <a class="logo-link" href="index.html">
-            <img class="logo" src="img/logo.svg" alt="Vet Logo" width="178" height="87">
-          </a>
-        </div>
-        
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a class="nav-link nav-link-active" href="#">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">О клинике</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Наши услуги</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Полезные статьи</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Контакты</a>
-          </li>
-        </ul>
-        
-        <a class="btn btn-ask-question" href="ask-question.html">Задать вопрос</a>
-      </div>
-    </div>
-  </nav>
-  
+    
+    <!-- Site Header Top -->
+    
+    <div class="site-header-top">
+      <div class="container">
+        <div class="site-header-top-content">
+          <address class="clinic-address">
+            г. Мариуполь, проспект Победы, 48а
+          </address>
+          
+          <div class="phone-numbers">
+            <a class="phone-link" href="tel:+0676347574">(067) 634 -75 - 74</a>
+            <span class="dot" aria-hidden="true"></span>
+            <a class="phone-link" href="tel:+0637570131">(0637) 57 - 01 - 31</a>
+            <span class="dot" aria-hidden="true"></span>
+            <a class="phone-link" href="tel:+0676347574">(098) 266 - 43 - 89</a>
+          </div><!-- phone-numbers -->
+          
+          <div class="working-hours">
+            <span><b>Пн - Пт</b> 8:00 - 18:00</span>
+            <span><b>Сб - Вс</b> 8:00 - 14:00</span>
+          </div><!-- working-hours -->
+        </div><!-- site-header-top-content -->
+      </div><!-- container -->
+    </div><!-- site-header-top -->
+    
+    <!-- Site Navigation -->
+    
+    <nav class="site-nav">
+      <div class="container">
+        <div class="site-nav-content">
+          <div class="logo-link-wrapper">
+            <a class="logo-link" href="index.html">
+              <img class="logo" src="img/logo.svg" alt="Vet Logo" width="178" height="87">
+            </a>
+          </div>
+          
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О клинике</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Наши услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Полезные статьи</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          
+          <a class="btn btn-ask-question" href="ask-question.html">Задать вопрос</a>
+        </div><!-- site-nav-content -->
+      </div><!-- container -->
+    </nav><!-- site-nav -->
+  </header><!-- site-header -->
   
   <!-- Site Main Content -->
   
@@ -99,7 +101,7 @@
     <section class="comments-section">
       <div class="container">
         <div class="comments-section-content">
-          <h2 class="visually-hiddden">Comments Section</h2>
+          <h2 class="visually-hidden">Comments Section</h2>
           <hr class="comments-hr">
           <blockquote class="comment">
             Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную ветеринарную помощь.
@@ -345,13 +347,13 @@
     
     <div class="feedback-section-content">
       <h2 class="section-heading">Обратная связь</h2>
-    
-    <p class="feedback-subtitle">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
-    
-    <form action="#" method="GET">
-      <label for="name_input">Ваше имя</label>
-      <input type="text" id="name_input" name="username" placeholder="Ваше имя" required>
-    </form>
+      
+      <p class="feedback-subtitle">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+      
+      <form action="#" method="GET">
+        <label for="name_input">Ваше имя</label>
+        <input type="text" id="name_input" name="username" placeholder="Ваше имя" required>
+      </form>
     </div>
   </section>
   
