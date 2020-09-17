@@ -80,7 +80,9 @@ img{
 /* Button */
 
 .btn{
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px 27px;
   border: none;
   background: none;
@@ -90,7 +92,6 @@ img{
   line-height: 21px;
   color: #fff;
   text-align: center;
-  vertical-align: baseline;
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
@@ -115,6 +116,14 @@ img{
   font-size: 36px;
   line-height: 56%;
   color: #333333;
+}
+
+/* Sprite Icons */
+
+.icon{
+  width: 21px;
+  height: 21px;
+  margin-right: 6px;
 }
 
 /* Site Header */
@@ -408,7 +417,7 @@ img{
 
 .btn-our-services{
   min-width: 180px;
-  max-width: 100%;
+  max-width: 180px;
   padding: 15px;
   border-radius: 3px;
   transition: background-color 0.3s ease,
@@ -513,8 +522,7 @@ img{
 /* Services Section */
 
 .services-section{
-  padding-top: 60px;
-  padding-bottom: 118px;
+  padding: 60px 0;
 }
 
 .services-section-content{
@@ -670,6 +678,7 @@ img{
 .service-info-img{
   display: block;
   margin-right: 67px;
+  object-fit: cover;
 }
 
 .service-info-text h3{
@@ -704,6 +713,7 @@ img{
 }
 
 .service-yellow-btn:hover{
+  color: #FFBD54;
   background-color: #333333;
 }
 
@@ -722,6 +732,7 @@ img{
 }
 
 .service-black-btn:hover{
+  color: #333;
   background-color: #FFBD54;
 }
 
@@ -733,12 +744,12 @@ img{
 
 .events-form-section{
   position: relative;
-  margin-top: 117px;
-  margin-bottom: 108px;
+  margin-top: 67px;
+  margin-bottom: 75px;
   padding: 198px 0 153px;
   /* background-color: #78C0DE; */
   background-image: url(../img/blue-bg.png), 
-   url(../img/blue-bg-upper.png);
+  url(../img/blue-bg-upper.png);
   background-repeat: no-repeat, repeat;
   background-position: center center;
   background-size: contain;
@@ -807,7 +818,7 @@ img{
 /* Articles Section */
 
 .articles-section{
-  padding-top: 108px;
+  padding-top: 76px;
   padding-bottom: 132px;
 }
 
@@ -968,7 +979,92 @@ img{
 .feedback-section{
   margin-top: 133px;
   margin-bottom: 123px;
+  background-color: #333;
+  background-image: url(../img/form-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+.feedback-section-content{
   display: flex;
+}
+
+.feedback-map-link{
+  display: block;
+}
+
+.feedback-map{
+  display: block;
+}
+
+.feedback-section-info{
+  max-width: 710px;
+  padding: 48px 150px;
+}
+
+.feedback-section-heading{
+  margin: 14px 0;
+  
+  text-align: left;
+  color: #fff;
+}
+
+.feedback-subtitle{
+  max-width: 335px;
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.feedback-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form input{
+  width: 375px;
+  padding: 16px 22px;
+  border: none;
+  margin-bottom: 14px;
+  outline: 0;
+}
+
+.feedback-form input::placeholder{
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.feedback-form input:not(:placeholder-shown):invalid{
+  color: #D81D04;
+  border: 1px solid #D81D04;
+}
+
+.feedback-form input:valid{
+  color: #00B031;
+  border: 1px solid #00B031;
+}
+
+.feedback-form textarea{
+  width: 375px;
+  height: 165px;
+  padding: 16px 22px;
+  margin-bottom: 30px;
+  resize: none;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+  overflow: auto;
+  outline: 0;
+}
+
+.feedback-yellow-btn{
+  min-width: 226px;
+  max-width: 226px;
+  padding: 15px;
+  color: #ffffff;
+  background-color: #FFBD54;
 }
 
 /* Site Footer */

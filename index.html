@@ -9,6 +9,17 @@
   <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
 </head>
 <body>
+
+  <svg style="display:none">
+    <symbol id="money-icon" viewBox="0 0 22 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M14.507 11.14v.08l.078.017c.721.164 1.25.768 1.25 1.476a.315.315 0 0 1-.63 0c0-.504-.469-.89-1.013-.89-.545 0-1.013.386-1.013.89s.468.89 1.013.89c.913 0 1.643.689 1.643 1.52 0 .709-.529 1.312-1.25 1.476l-.078.018v.26a.315.315 0 0 1-.63 0v-.26l-.078-.018c-.722-.164-1.25-.768-1.25-1.476a.315.315 0 0 1 .63 0c0 .505.468.89 1.013.89.544 0 1.013-.386 1.013-.89s-.469-.89-1.013-.89c-.913 0-1.643-.689-1.643-1.52 0-.708.528-1.312 1.25-1.476l.078-.018v-.296a.315.315 0 0 1 .63 0v.216zm1.978-1.97a5.307 5.307 0 0 1 2.168 1.918 5.306 5.306 0 0 1 .218 5.34l.088.048-.088-.047a.315.315 0 0 1-.426.13.315.315 0 0 1-.13-.426 4.674 4.674 0 0 0 .544-2.188 4.693 4.693 0 0 0-2.647-4.208.315.315 0 1 1 .273-.568zm-1.669.11a.315.315 0 0 1 0-.63h.028a.315.315 0 0 1-.002.63h-.027zm-4.744 2.477a4.674 4.674 0 0 0-.543 2.188 4.693 4.693 0 0 0 2.646 4.207l.043-.09-.043.09a.315.315 0 0 1-.273.568 5.309 5.309 0 0 1-2.168-1.92 5.306 5.306 0 0 1-.218-5.34.315.315 0 0 1 .556.296zm3.498 6.853h.001a.315.315 0 0 1 0 .63h-.027a.315.315 0 1 1 .003-.63h.024z" fill="currentColor" stroke="#fff" stroke-width=".2"></path>
+        <path fill="currentColor" d="M15.986 7.184l.019.045.047.013c2.936.814 5.097 3.511 5.097 6.703a6.963 6.963 0 0 1-6.955 6.955 6.937 6.937 0 0 1-5.08-2.21l-.03-.031H4.152c-.998 0-1.81-.812-1.81-1.81 0-.572.268-1.083.685-1.415l.098-.078-.098-.079a1.806 1.806 0 0 1 0-2.831l.098-.078-.098-.079a1.806 1.806 0 0 1 0-2.831l.098-.079-.098-.078a1.806 1.806 0 0 1-.685-1.416c0-.997.812-1.809 1.81-1.809h1.272l-.108-.156a1.798 1.798 0 0 1 0-2.045l.108-.157H1.909A1.81 1.81 0 0 1 .1 1.91C.1.912.912.1 1.91.1h10.167a1.811 1.811 0 0 1 1.491 2.831l-.107.157h3.513c.998 0 1.81.812 1.81 1.81 0 .997-.812 1.808-1.81 1.808h-1.27l.107.157c.069.1.127.207.175.321zm-1.205-.17l.052-.19a1.178 1.178 0 0 0-.515-.118H4.15a1.18 1.18 0 0 0 0 2.358h5.093l.029-.029a6.933 6.933 0 0 1 5.509-2.02zm-6.208 2.84l.116-.16H4.15a1.18 1.18 0 0 0 0 2.358H7.5l.021-.071a6.936 6.936 0 0 1 1.052-2.128zm-1.24 2.945l.02-.116H4.15a1.18 1.18 0 0 0 0 2.358h3.174l-.016-.114a6.984 6.984 0 0 1 .025-2.128zm.142 2.946l-.02-.074H4.15a1.18 1.18 0 0 0 0 2.358h4.414l-.107-.157a6.927 6.927 0 0 1-.982-2.127zM18.153 4.897a1.18 1.18 0 0 0-1.179-1.179H6.806a1.18 1.18 0 0 0 0 2.358h10.168a1.18 1.18 0 0 0 1.18-1.179zM.73 1.91c0 .65.529 1.18 1.18 1.18h10.167a1.18 1.18 0 0 0 0-2.359H1.91A1.18 1.18 0 0 0 .73 1.91zm7.138 12.036a6.332 6.332 0 0 0 6.326 6.325 6.332 6.332 0 0 0 6.325-6.325 6.332 6.332 0 0 0-6.325-6.326 6.332 6.332 0 0 0-6.326 6.326z" fill="currentColor" stroke="#fff" stroke-width=".2"></path>
+      </symbol>
+      <symbol id="note-icon" viewBox="0 0 21 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M20.459 6.61c-.72-.72-1.89-.72-2.61 0l-1.852 1.852V3.586c0-.493-.192-.956-.54-1.305L13.717.54A1.833 1.833 0 0 0 12.41 0H1.846A1.848 1.848 0 0 0 0 1.846v17.31c0 1.017.828 1.846 1.846 1.846H14.15a1.848 1.848 0 0 0 1.846-1.846v-5.47L20.46 9.22a1.845 1.845 0 0 0 0-2.61zm-8.153-5.38c.116 0 .34-.02.54.18l1.74 1.741c.196.195.18.41.18.54h-2.46v-2.46zm2.46 17.926a.615.615 0 0 1-.615.615H1.846a.616.616 0 0 1-.615-.615V1.846c0-.34.276-.615.615-.615h9.229v3.076c0 .34.276.615.615.615h3.077v4.772L12.95 11.51l-.87.87a.615.615 0 0 0-.148.24l-.87 2.611a.615.615 0 0 0 .778.778l2.61-.87a.615.615 0 0 0 .241-.148l.075-.075v4.24zm-1.38-6.34l.87.87-.331.332-1.306.435.435-1.305.333-.333zm1.74 0l-.87-.871 2.958-2.96.87.87-2.957 2.96zM19.59 8.35l-.635.634-.87-.87.635-.635a.616.616 0 0 1 .87.87z" fill="currentColor"></path>
+        <path fill="currentColor" d="M11.69 6.153H3.076a.615.615 0 0 0 0 1.23h8.614a.615.615 0 0 0 0-1.23zM9.23 8.614H3.075a.615.615 0 0 0 0 1.23H9.23a.615.615 0 0 0 0-1.23zm0 2.461H3.075a.615.615 0 1 0 0 1.23H9.23a.615.615 0 0 0 0-1.23zm0 2.461H3.075a.615.615 0 0 0 0 1.23H9.23a.615.615 0 0 0 0-1.23zm2.46 3.774H8a.615.615 0 0 0 0 1.23h3.691a.615.615 0 0 0 0-1.23z" fill="currentColor"></path>
+      </symbol>
+      </svg>
   
   
   <header class="site-header">
@@ -219,9 +230,19 @@
               <p>По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
               
               <div class="service-buttons">
-                <a class="btn service-yellow-btn" href="prices.html">Узнать цену</a>
+                <a class="btn service-yellow-btn" href="prices.html">
+                  <svg class="icon">
+                    <use xlink:href="#money-icon"></use>
+                  </svg>
+                  <span>Узнать цену</span> 
+                </a>
                 
-                <a class="btn service-black-btn" href="appointment.html">Записаться на приём</a>
+                <a class="btn service-black-btn" href="appointment.html">
+                  <svg class="icon">
+                    <use xlink:href="#note-icon"></use>
+                  </svg>
+                  <span>Записаться на приём</span>
+                </a>
               </div><!-- service-buttons -->
             </div><!-- service-info-text -->
           </div><!-- service-info -->
@@ -317,19 +338,30 @@
       <!-- Feedback Section -->
       
       <section class="feedback-section">
-        <a class="feedback-map-link" href="https://goo.gl/maps/Li6QioLF6r5FvDAi7">
-          <img class="feedback-map" src="img/map-yandex.jpg" alt="Map" srcset="img/map-yandex.jpg 1x, img/map-yandex@2x.jpg 2x" width="462" height="652">
-        </a>
-        
-        <div class="feedback-section-content">
-          <h2 class="section-heading">Обратная связь</h2>
-          
-          <p class="feedback-subtitle">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
-          
-          <form action="#" method="GET">
-            <label for="name_input">Ваше имя</label>
-            <input type="text" id="name_input" name="username" placeholder="Ваше имя" required>
-          </form>
+        <div class="container">
+          <div class="feedback-section-content">
+            <a class="feedback-map-link" href="https://goo.gl/maps/Li6QioLF6r5FvDAi7">
+              <img class="feedback-map" src="img/map-yandex.jpg" alt="Map" srcset="img/map-yandex.jpg 1x, img/map-yandex@2x.jpg 2x" width="462" height="652">
+            </a>
+            
+            <div class="feedback-section-info">
+              <h2 class="section-heading feedback-section-heading">Обратная связь</h2>
+              
+              <p class="feedback-subtitle">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+              
+              <form class="feedback-form" action="#" method="GET">
+                <label class="visually-hidden" for="name_input">Ваше имя</label>
+                <input type="text" id="name_input" name="username" placeholder="Ваше имя" minlength="3" required>
+
+                <label for="feedback-email_input"></label>
+                <input type="email" name="feedback-email" id="feedback-email_input" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Email для обратной связи" required>
+
+                <textarea name="feedback-textarea" id="feedback_textarea" minlength="3">Опишите Ваш вопрос.</textarea>
+
+                <button class="btn feedback-yellow-btn" type="submit">Задать нам вопрос</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
       
