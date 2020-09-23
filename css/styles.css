@@ -729,7 +729,7 @@ img{
 
 .service-black-btn{
   max-width: 241px;
-  padding: 15px 37px;
+  padding: 15px 36px;
   border-radius: 3px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1455,16 +1455,21 @@ img{
     font-size: 65px;
   }
   
-  .services-section-content {
+  .services-section-content{
     max-width: 900px;
   }
   
   .service-info-img{
     width: 350px;
+    height: 300px;
   }
   
   .service-info-text{
     font-size: 16px;
+  }
+
+  .events-form-section{
+    margin: 0;
   }
   
   .events-form-section-content{
@@ -1502,6 +1507,20 @@ img{
     color: #FFBD54;
     background-color:transparent;
   }
+  
+  .promo-section{
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-image: url(../img/promo-bg-right.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto;
+  }
+  
+  .promo-section-content{
+    margin-left: 100px;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 1149px){
@@ -1522,13 +1541,17 @@ img{
     flex-direction: column;
     max-width: 200px;
   }
-
+  
   .footer-clinic-address{
     margin: 15px 30px;
   }
 }
 
 @media only screen and (max-width: 1014px){
+  .section-heading{
+    font-size: 36px;
+  }
+
   .site-header-top-content{
     flex-direction: column;
     padding: 20px 0;
@@ -1538,6 +1561,79 @@ img{
     margin: 15px 0;
   }
   
+  .comment{
+    width: 550px;
+  }
+
+  .comment-author{
+    margin-top: 20px;
+  }
+
+  .services-section{
+    padding: 15px 0;
+  }
+
+  .services-section-content{
+    max-width: 750px;
+  }
+
+  .services-section-heading{
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .slider-item{
+    width: 150px;
+  }
+
+  .slider-link{
+    padding: 30px 15px;
+  }
+
+  .slider-link span{
+    font-size: 14px;
+  }
+
+  .service-info{
+    padding: 25px 15px;
+  }
+
+  .service-info-img{
+    margin-right: 45px;
+    width: 200px;
+    height: 250px;
+  }
+
+  .inner-heading{
+    font-size: 28px;
+  }
+
+  .service-info-text p{
+    font-size: 14px;
+  }
+
+  .service-buttons{
+    margin-top: 20px;
+  }
+
+  .service-yellow-btn,
+  .service-black-btn{
+    padding: 12px 28px;
+  }
+
+  .events-form-section-content{
+    padding-left: 50px;
+  }
+
+  .events-form input{
+    padding: 10px 12px;
+  }
+
+  .event-form-btn{
+    min-width: 150px;
+    padding: 12px;
+  }
+
   .services-service{
     width: 400px;
   }
@@ -1552,6 +1648,18 @@ img{
 }
 
 @media only screen and (max-width: 980px){
+  .promo-section-content{
+    margin-left: 50px;
+  }
+  
+  .page-heading{
+    font-size: 55px;
+  }
+  
+  .page-info{
+    font-size: 14px;
+  }
+  
   .services-promo{
     padding-left: 0;
     background-image: none;
@@ -1569,35 +1677,92 @@ img{
   .nav-menu{
     max-width: 320px;
   }
+  
+  .comment::before,
+  .comment::after{
+    display: none;
+  }
+
+  .services-section-content{
+    max-width: 600px;
+  }
+
+  .service-info-img{
+    margin-right: 25px;
+    width: 150px;
+    height: 250px;
+  }
+
+  .btn{
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .events-form-section{
+    padding: 60px 0;
+    margin: 50px 0;
+    background-color: #78C0DE;
+    background-image: none;
+  }
+
+  .events-form-section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .events-form-section-content h2{
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .service-black-btn{
+    max-width: 200px;
+  }
+  
   .services-service{
     width: 350px;
   }
 }
 
 @media only screen and (max-width: 769px){
+  .promo-section-content{
+    max-width: 470px;
+    margin-left: 0;
+  }
+  
+  .page-heading{
+    font-size: 50px;
+  }
+  
+  .page-info{
+    font-size: 12px;
+  }
+  
   .site-footer-content{
     flex-direction: column;
   }
-
+  
   .footer-nav-menu{
     max-width: 100%;
     margin: 30px 0;
   }
-
+  
   .footer-nav-item{
     min-width: 0;
     margin-right: 30px;
   }
-
+  
   .footer-right-wrapper{
     flex-direction: row;
     max-width: 100%;
   }
-
+  
   .footer-clinic-address{
     margin: 0 30px;
   }
-
+  
   .services-service{
     width: 305px;
   }
@@ -1626,6 +1791,78 @@ img{
     width: 100%;
   }
   
+  .promo-section{
+    background-image: none;
+    padding-bottom: 70px;
+  }
+  
+  .promo-section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .comments-section{
+    padding: 0;
+  }
+  
+  .comment{
+    width: 350px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .comment-author{
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .services-section-content{
+    max-width: 490px;
+  }
+
+  .services-section-heading{
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .slider-track{
+    flex-direction: column;
+    align-items: center;
+    max-height: 600px;
+    margin-bottom: 30px;
+    overflow: auto;
+  }
+
+  .slider-item{
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .slider-link span{
+    font-size: 18px;
+  }
+
+  .slider-item-active .slider-link::after{
+    display: none;
+  }
+
+  .slider-btn{
+    display: none;
+  }
+
+  .slider-link::before{
+    width: 100px;
+    height: 60px;
+  }
+
+  .service-info-img{
+    display: none;
+  }
+  
   .services-service{
     width: 500px;
     padding-left: 150px;
@@ -1641,15 +1878,15 @@ img{
   .services-service:not(:nth-child(2n)){
     margin-right: 0;
   }
-
+  
   .site-footer{
     padding-top: 50px;
   }
-
+  
   .footer-nav-menu{
     max-width: 300px;
   }
-
+  
   .footer-nav-item{
     min-width: 150px;
     margin-right: 0;
@@ -1662,17 +1899,71 @@ img{
     margin-left: auto;
     margin-right: auto;
   }
+  
+  .promo-section-content{
+    max-width: 350px;
+  }
+  
+  .page-heading{
+    font-size: 40px;
+    margin-bottom: 19px;
+  }
+  
+  .page-info{
+    margin-bottom: 19px;
+  }
 
+  .events-form{
+    flex-direction: column;
+    min-width: 250px;
+    max-width: 350px;
+  }
+
+  .events-form input{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .event-form-btn{
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
   .footer-right-wrapper{
     flex-direction: column;
   }
-
+  
   .footer-clinic-address{
     margin: 15px 30px;
   }
 }
 
 @media only screen and (max-width: 550px){
+  .comment{
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .comment-author{
+    font-size: 16px;
+  }
+
+  .service-info-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .service-buttons{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .service-yellow-btn{
+    margin-bottom: 20px;
+  }
+
   .services-promo{
     padding: 60px 0;
   }
@@ -1691,6 +1982,10 @@ img{
 }
 
 @media only screen and (max-width: 450px){
+  .section-heading{
+    font-size: 28px;
+  }
+
   .site-header-top-content{
     align-items: start;
   }
@@ -1703,7 +1998,7 @@ img{
   .phone-numbers::before{
     display: none;
   }
-
+  
   .phone-link{
     display: flex;
     align-items: center;
@@ -1723,6 +2018,14 @@ img{
   
   .dot{
     display: none;
+  }
+  
+  .promo-section-content{
+    max-width: 280px;
+  }
+  
+  .page-heading{
+    font-size: 32px;
   }
   
   .services-promo-content{
@@ -1752,17 +2055,17 @@ img{
   .site-nav-content{
     align-items: start;
   }
-
+  
   .logo-link-wrapper{
     justify-content: start;
   }
-
+  
   .btn-ask-question{
     justify-content: start;
     padding: 0;
     margin-bottom: 20px;
   }
-
+  
   .btn-ask-question:active,
   .btn-ask-question:hover{
     background-color: transparent;
