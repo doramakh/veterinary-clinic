@@ -1102,7 +1102,12 @@ img{
 
 .footer-logo-link{
   vertical-align: baseline;
-  margin-right: 30px;
+}
+
+.footer-logo{
+  display: block;
+  width: 158px;
+  height: 77px;
 }
 
 .footer-nav-menu{
@@ -1110,14 +1115,24 @@ img{
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 300px;
+  padding: 0;
   margin: 0;
-  margin-right: 30px;
+  margin: 0 30px;
+  list-style-type: none;
+}
+
+.footer-nav-item{
+  min-width: 150px;
+  margin-bottom: 14px;
 }
 
 .footer-nav-link{
-  width: 115px;
-  padding: 0;
-  margin-bottom: 14px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  text-decoration: none;
   transition: color 0.3s ease,
   opacity 0.3s ease;
 }
@@ -1131,12 +1146,17 @@ img{
   opacity: 0.5;
 }
 
+.footer-right-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 610px;
+}
+
 .footer-working-hours{
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  margin-right: 30px;
+  margin: 0 30px;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -1160,12 +1180,10 @@ img{
 
 .footer-clinic-address{
   position: relative;
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
+  margin: 0 30px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 18px;
   font-style: normal;
   color: #333333;
 }
@@ -1185,14 +1203,15 @@ img{
   content: "";
 }
 
-.phone-numbers-footer{
+.footer-phone-numbers{
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-left: 30px;
 }
 
-.phone-numbers-footer::before{
+.footer-phone-numbers::before{
   position: absolute;
   top: 0;
   left: 0;
@@ -1207,15 +1226,29 @@ img{
   content: "";
 }
 
-.phone-numbers-footer a{
+.footer-phone-numbers a{
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease,
+  opacity 0.3s ease;
+  white-space: nowrap;
 }
 
-.phone-numbers-footer a:not(:last-child){
+.footer-phone-numbers a:not(:last-child){
   margin-bottom: 4px;
+}
+
+.footer-phone-numbers a:hover{
+  color: #FFBD54;
+}
+
+.footer-phone-numbers a:active{
+  color: #333333;
+  opacity: 0.5;
 }
 
 /* SERVICES PAGE */
@@ -1484,6 +1517,17 @@ img{
   }
 }
 
+@media only screen and (max-width: 1100px){
+  .footer-right-wrapper{
+    flex-direction: column;
+    max-width: 200px;
+  }
+
+  .footer-clinic-address{
+    margin: 15px 30px;
+  }
+}
+
 @media only screen and (max-width: 1014px){
   .site-header-top-content{
     flex-direction: column;
@@ -1531,6 +1575,29 @@ img{
 }
 
 @media only screen and (max-width: 769px){
+  .site-footer-content{
+    flex-direction: column;
+  }
+
+  .footer-nav-menu{
+    max-width: 100%;
+    margin: 30px 0;
+  }
+
+  .footer-nav-item{
+    min-width: 0;
+    margin-right: 30px;
+  }
+
+  .footer-right-wrapper{
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .footer-clinic-address{
+    margin: 0 30px;
+  }
+
   .services-service{
     width: 305px;
   }
@@ -1574,6 +1641,19 @@ img{
   .services-service:not(:nth-child(2n)){
     margin-right: 0;
   }
+
+  .site-footer{
+    padding-top: 50px;
+  }
+
+  .footer-nav-menu{
+    max-width: 300px;
+  }
+
+  .footer-nav-item{
+    min-width: 150px;
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 560px){
@@ -1581,6 +1661,14 @@ img{
     width: 320px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .footer-right-wrapper{
+    flex-direction: column;
+  }
+
+  .footer-clinic-address{
+    margin: 15px 30px;
   }
 }
 
