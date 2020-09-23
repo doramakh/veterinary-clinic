@@ -335,6 +335,7 @@ img{
 
 .nav-link-active:hover,
 .nav-link-active:active{
+  color: #333;
   background-color: transparent;
   opacity: 1;
 }
@@ -1217,7 +1218,186 @@ img{
   margin-bottom: 4px;
 }
 
+/* SERVICES PAGE */
+
+.services-promo{
+  padding-left: 110px;
+  padding-top: 118px;
+  padding-bottom: 140px;
+  background-image: url(../img/service-bird.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+.services-promo-content{
+  max-width: 450px;
+}
+
+.services-promo-heading{
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 70px;
+  line-height: 1.2;
+  color: #333;
+}
+
+.services-promo-text{
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Services List */
+
+.services-services-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.services-service{
+  position: relative;
+  width: 305px;
+  margin-bottom: 34px;
+  padding: 58px 20px 45px 50px;
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.services-service:not(:nth-child(4n)){
+  margin-right: 30px;
+}
+
+.services-service::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 108px;
+  height: 95px;
+  background-image: url(../img/grey-pet.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.services-service::before{
+  display: inline-block;
+  width: 86px;
+  height: 80px;
+  margin-bottom: 22px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: contain;
+  content: "";
+}
+
+.service-inspection::before{
+  background-image: url(../img/doctor.png);
+}
+
+.service-surgical::before{
+  background-image: url(../img/xirurgia.png);
+}
+
+.service-dermotology::before{
+  background-image: url(../img/dermotologia.png);
+}
+
+.service-lab::before{
+  background-image: url(../img/lab.png);
+}
+
+.service-ophthalmology::before{
+  background-image: url(../img/oftalmologia.png);
+}
+
+.service-ultrasound::before{
+  background-image: url(../img/ultrasound.png);
+}
+
+.service-chipping::before{
+  background-image: url(../img/chipping.png);
+}
+
+.service-passport::before{
+  background-image: url(../img/passport.png);
+}
+
+.service-vaccination::before{
+  background-image: url(../img/vaccination.png);
+}
+
+.service-dentistry::before{
+  background-image: url(../img/dentistry.png);
+}
+
+.service-home-call::before{
+  background-image: url(../img/home-call.png);
+}
+
+.services-service:hover{
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+}
+
+.services-service:hover .services-service-btn{
+  background-color: #000;
+}
+
+.services-service-name{
+  min-width: 230px;
+  margin: 0;
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.services-service-text{
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.services-service-btn{
+  max-width: 156px;
+  padding: 15px;
+  border-radius: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.services-service-btn-yellow{
+  background-color:  #FFBD54;;
+}
+
+.services-service-btn-blue{
+  background-color: #78C0DE;
+}
+
 /* Responsive */
+
+@media only screen and (max-width: 1349px){
+  .services-service{
+    width: 350px;
+  }
+  
+  .services-service:not(:nth-child(4n)){
+    margin-right: 0;
+  }
+  
+  .services-service:not(:nth-child(3n)){
+    margin-right: 30px;
+  }
+}
 
 @media only screen and (max-width: 1230px){
   .site-header-top-content{
@@ -1266,5 +1446,137 @@ img{
   .feedback-section {
     background-position: top 50px right -50px;
   }
+  
+  .services-service{
+    width: 320px;
+  }
 }
 
+@media only screen and (max-width: 1190px){
+  .nav-menu{
+    justify-content: space-evenly;
+  }
+  
+  .nav-item{
+    padding: 15px 20px;
+  }
+  
+  .nav-link{
+    padding: 0;
+  }
+  
+  .nav-link:hover{
+    color: #FFBD54;
+    background-color:transparent;
+  }
+}
+
+@media only screen and (max-width: 1149px){
+  .services-service{
+    width: 305px;
+  }
+}
+
+@media only screen and (max-width: 1014px){
+  .services-service{
+    width: 400px;
+  }
+
+  .services-service:not(:nth-child(3n)){
+    margin-right: 0;
+  }
+  
+  .services-service:not(:nth-child(2n)){
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 980px){
+  .services-promo{
+    padding-left: 0;
+    background-image: none;
+  }
+
+  .services-promo-content{
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 869px){
+  .services-service{
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 769px){
+  .services-service{
+    width: 305px;
+  }
+
+  .services-promo-content{
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 679px){
+  .services-service{
+    width: 500px;
+    padding-left: 150px;
+  }
+
+  .services-service::before{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+  }
+
+  .services-service:not(:nth-child(2n)){
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .services-promo{
+    padding: 60px 0;
+  }
+
+  .services-promo-content{
+    max-width: 350px;
+  }
+
+  .services-promo-heading{
+    font-size: 50px;
+  }
+
+  .services-service{
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .services-promo-content{
+    max-width: 300px;
+  }
+
+  .services-promo-heading{
+    font-size: 40px;
+  }
+
+  .services-promo-text{
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .services-service::before{
+    position: static;
+    transform: translateY(0);
+  }
+  .services-service{
+    width: 300px;
+    padding-left: 50px;
+  }
+}
